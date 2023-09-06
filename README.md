@@ -1,6 +1,8 @@
 # E-Commerce Website
 
-A Ecommerce Website made with React.js Framework.
+Ecommerce website development is a major requirement of today's internet evolving retail industry. However, considering the industry's intense competition. The development of an efficient eCommerce website requires massive inputs to ensure the best customer experience and ease of management. 
+My approach was to use the React.JS framework because React is a JavaScript library for designing user interfaces. It enables developers to produce reusable, modular components that are simple to integrate into bigger applications. It's a wonderful option for creating ecommerce apps because it makes it easier to create dynamic and complicated user interfaces.
+ Used Bootstrap makes responsive web design a reality.
 
 
 ## Demo
