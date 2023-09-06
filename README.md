@@ -15,9 +15,9 @@ A Ecommerce Website made with React.js Framework.
 
 ## Screenshots
 
-![App Screenshot]
-(<img width="1440" alt="image" src="https://github.com/pratyushggoyal/totalitycorp-frontend-challenge/assets/56029995/e7ca0686-95c0-43d2-a1a8-2ca7779536d6">
-)
+
+<img width="1440" alt="image" src="https://github.com/pratyushggoyal/totalitycorp-frontend-challenge/assets/56029995/e7ca0686-95c0-43d2-a1a8-2ca7779536d6">
+
 
 
 
