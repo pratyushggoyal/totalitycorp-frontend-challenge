@@ -10,7 +10,7 @@ const Checkout = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-12 py-5 bg-light text-center">
-            <h4 className="p-3 display-5">No item in Cart</h4>
+            <h4 className="p-3 display-5">Cart Empty</h4>
             <Link to="/" className="btn btn-outline-dark mx-4">
               <i className="fa fa-arrow-left"></i> Continue Shopping
             </Link>
@@ -77,8 +77,8 @@ const Checkout = () => {
                           type="text"
                           className="form-control"
                           id="firstName"
-                          placeholder=""
-                          value=""
+                          placeholder="Pratyush"
+                          
                           required
                         />
                         <div className="invalid-feedback">
@@ -94,8 +94,8 @@ const Checkout = () => {
                           type="text"
                           className="form-control"
                           id="lastName"
-                          placeholder=""
-                          value=""
+                          placeholder="Goyal"
+                          
                           required
                         />
                         <div className="invalid-feedback">
@@ -111,7 +111,7 @@ const Checkout = () => {
                           type="email"
                           className="form-control"
                           id="email"
-                          placeholder="you@example.com"
+                          placeholder="name@email.com"
                           required
                         />
                         <div className="invalid-feedback">
@@ -128,7 +128,7 @@ const Checkout = () => {
                           type="text"
                           className="form-control"
                           id="address"
-                          placeholder="1234 Main St"
+                          placeholder="House no. and street name"
                           required
                         />
                         <div className="invalid-feedback">
@@ -171,16 +171,61 @@ const Checkout = () => {
                         <select className="form-select" id="state" required>
                           <option value="">Choose...</option>
                           <option>Andhra Pradesh</option>
+                          <option>Andaman and Nicobar Islands</option>
+                          <option>Arunachal Pradesh</option>
+                          <option>Assam</option>
+                          <option>Bihar</option>
+                          <option>Chandigarh</option>
+                          <option>Chattisgarh</option>
+                          <option>Dadra and Nagar Haveli & Daman and Diu</option>
                           <option>Delhi</option>
-                          <option>Madhya Pradesh</option>
                           <option>Goa</option>
+                          <option>Gujrat</option>
+                          <option>Haryana</option>
+                          <option>Himachal Pradesh</option>
+                          <option>Jammu & Kashmir</option>
+                          <option>Jharkhand</option>
+                          <option>Karnataka</option>
+                          <option>Kerala</option>
+                          <option>Ladakh</option>
+                          <option>Lakshadweep</option>
+                          <option>Madhya Pradesh</option>
+                          <option>Maharashtra</option>
+                          <option>Manipur</option>
+                          <option>Meghalaya</option>
+                          <option>Mizoram</option>
+                          <option>Nagaland</option>
+                          <option>Odisha</option>
+                          <option>Puducherry (Pondicherry)</option>
                           <option>Punjab</option>
                           <option>Rajasthan</option>
+                          <option>Sikkim</option>
+                          <option>Tamil Nadu</option>
+                          <option>Telangana</option>
+                          <option>Tripura</option>
                           <option>Uttar Pradesh</option>
-                          <option>Uttarkhand</option>
+                          <option>Uttarakhand</option>
+                          <option>West Bengal</option>
                         </select>
                         <div className="invalid-feedback">
                           Please provide a valid state.
+                        </div>
+                      </div>
+
+                      <div className="col-md-3 my-1">
+                        <label for="city" className="form-label">
+                          City
+                        </label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="city"
+                          placeholder="xyz"
+                          required
+                        />
+                        
+                        <div className="invalid-feedback">
+                          City Name is required.
                         </div>
                       </div>
 
@@ -192,9 +237,11 @@ const Checkout = () => {
                           type="text"
                           className="form-control"
                           id="zip"
-                          placeholder=""
+                          placeholder="123456"
+                          maxlength='6'
                           required
                         />
+                        
                         <div className="invalid-feedback">
                           Zip code required.
                         </div>
@@ -214,7 +261,7 @@ const Checkout = () => {
                           type="text"
                           className="form-control"
                           id="cc-name"
-                          placeholder=""
+                          placeholder="Card Holder's Name"
                           required
                         />
                         <small className="text-muted">
@@ -227,13 +274,14 @@ const Checkout = () => {
 
                       <div className="col-md-6">
                         <label for="cc-number" className="form-label">
-                          Credit card number
+                          Credit Card Number
                         </label>
                         <input
                           type="text"
                           className="form-control"
                           id="cc-number"
-                          placeholder=""
+                          placeholder="0000 0000 0000 0000"
+                          maxlength='16'
                           required
                         />
                         <div className="invalid-feedback">
@@ -245,11 +293,14 @@ const Checkout = () => {
                         <label for="cc-expiration" className="form-label">
                           Expiry Date
                         </label>
+                        
                         <input
-                          type="text"
+                          type="month"
                           className="form-control"
                           id="cc-expiration"
-                          placeholder=""
+                          placeholder="MM/YY"
+                          pattern='yyyy/mm'
+                          maxlength='7'
                           required
                         />
                         <div className="invalid-feedback">
@@ -265,7 +316,8 @@ const Checkout = () => {
                           type="text"
                           className="form-control"
                           id="cc-cvv"
-                          placeholder=""
+                          placeholder="3-digit CVV"
+                          maxlength='3'
                           required
                         />
                         <div className="invalid-feedback">
